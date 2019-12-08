@@ -23,7 +23,7 @@ $(call inherit-product, device/xiaomi/kenzo/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := kenzo
-PRODUCT_NAME := full_kenzo
+PRODUCT_NAME := blaze_kenzo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := kenzo
 PRODUCT_MANUFACTURER := Xiaomi
