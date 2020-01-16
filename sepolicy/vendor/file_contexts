@@ -1,5 +1,4 @@
 # Fingerprint
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.0-service-custom u:object_r:hal_fingerprint_8956_exec:s0
 /dev/socket/fpce                                                      u:object_r:fpc_socket:s0
 /data/fpc(/.*)?                                                       u:object_r:fpc_data_file:s0
 /sys/devices/soc.0/fpc_fpc1020.*/hw_reset                             u:object_r:fpc_sysfs:s0

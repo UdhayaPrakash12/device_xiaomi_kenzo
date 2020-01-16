@@ -25,8 +25,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info_extcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_extcodec.xml \
     $(LOCAL_PATH)/audio/mixer_paths_wcd9326.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_wcd9326.xml
 
-
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     fingerprint.msm8952
@@ -58,6 +56,31 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+
+# OpenGapps
+GAPPS_VARIANT := nano
+
+GAPPS_FORCE_PACKAGE_OVERRIDES := true
+
+GAPPS_FORCE_MMS_OVERRIDES := true
+
+GAPPS_PRODUCT_PACKAGES += \
+    CalculatorGoogle \
+    CalendarGooglePrebuilt \
+    GoogleContacts \
+    GoogleContactsSyncAdapter \
+    GoogleDialer \
+    WebViewGoogle \
+    GoogleWebViewOverlay \
+    TrichromeLibrary \
+    PrebuiltDeskClockGoogle \
+    Wallpapers \
+    StorageManagerGoogle \
+    LatinImeGoogle \
+    PrebuiltBugle
+
+
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
 # Inherit from msm8956-common
 $(call inherit-product, device/xiaomi/msm8956-common/msm8956.mk)
