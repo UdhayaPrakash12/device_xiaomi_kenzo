@@ -58,29 +58,28 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
 # OpenGapps
-GAPPS_VARIANT := nano
+#GAPPS_VARIANT := nano
 
-GAPPS_FORCE_PACKAGE_OVERRIDES := true
+#GAPPS_FORCE_PACKAGE_OVERRIDES := true
 
-GAPPS_FORCE_MMS_OVERRIDES := true
+#GAPPS_FORCE_MMS_OVERRIDES := true
 
-GAPPS_PRODUCT_PACKAGES += \
-    CalculatorGoogle \
-    CalendarGooglePrebuilt \
-    GoogleContacts \
-    GoogleContactsSyncAdapter \
-    GoogleDialer \
-    WebViewGoogle \
-    GoogleWebViewOverlay \
-    TrichromeLibrary \
-    PrebuiltDeskClockGoogle \
-    Wallpapers \
-    StorageManagerGoogle \
-    LatinImeGoogle \
-    PrebuiltBugle
+#GAPPS_PRODUCT_PACKAGES += \
+#    CalculatorGoogle \
+#    CalendarGooglePrebuilt \
+#    GoogleContacts \
+#    GoogleContactsSyncAdapter \
+#    GoogleDialer \
+#    WebViewGoogle \
+#    GoogleWebViewOverlay \
+#    TrichromeLibrary \
+#    PrebuiltDeskClockGoogle \
+#    Wallpapers \
+#    StorageManagerGoogle \
+#    LatinImeGoogle \
+#    PrebuiltBugle
 
-
-$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+#$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
 # Inherit from msm8956-common
 $(call inherit-product, device/xiaomi/msm8956-common/msm8956.mk)
