@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_kenzo.mk
+    $(LOCAL_DIR)/derp_kenzo.mk
 
 COMMON_LUNCH_CHOICES := \
-                aosip_kenzo-user \
-		aosip_kenzo-userdebug \
-		aosip_kenzo-eng
+                derp_kenzo-user \
+		derp_kenzo-userdebug \
+		derp_kenzo-eng
