@@ -18,6 +18,8 @@ $(call inherit-product, device/xiaomi/kenzo/full_kenzo.mk)
 
 # Inherit some common AOSiP stuff.
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+
+#Google services
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOTANIMATION_RES := 1080
 IS_PHONE := true
@@ -26,7 +28,7 @@ IS_PHONE := true
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := kenzo
-PRODUCT_NAME := aosip_kenzo
+PRODUCT_NAME := derp_kenzo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 3
 TARGET_VENDOR := Xiaomi
