@@ -17,5 +17,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_kenzo.mk
 
 COMMON_LUNCH_CHOICES := \
-		aosp_kenzo-userdebug \
-		aosp_kenzo-eng
+		pixys_kenzo-userdebug \
+		pixys_kenzo-eng
