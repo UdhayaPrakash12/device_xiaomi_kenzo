@@ -16,8 +16,8 @@
 $(call inherit-product, device/xiaomi/kenzo/full_kenzo.mk)
 
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common pixys stuff.
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 
 # Set those variables here to overwrite the inherited values.
@@ -39,4 +39,17 @@ BUILD_FINGERPRINT=Xiaomi/kenzo/kenzo:6.0.1/MMB29M/V8.2.1.0.MHOCNDL:user/release-
 
 # Product packages
 TARGET_USE_JELLY := true
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_PACKAGES += \
+    AdvancedControls \
+    Phonograph
+
+
+
+
 
